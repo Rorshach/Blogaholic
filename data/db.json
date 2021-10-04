@@ -2,7 +2,7 @@
     "blogs": [
         {
             "title": "my first blog",
-            "body": "why do we use it? it is a long established fact that a reader will be distracted by the words on this page",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor nisl vel arcu auctor, eu dapibus ante suscipit. Maecenas congue mattis lacus auctor convallis. Ut ornare urna et aliquet finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean mattis rutrum lacus nec consectetur. Sed eros felis, sollicitudin vitae posuere eget, bibendum et leo. Proin in lorem sed purus rhoncus tristique quis sed magna. Sed in mauris at nisl consectetur volutpat. Nulla at est orci. Praesent dignissim sagittis massa, id interdum nulla lacinia sit amet. Praesent egestas lorem sagittis, blandit ex id, scelerisque justo.",
             "author": "mario",
             "id": 1
         },
