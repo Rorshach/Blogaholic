@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+// import { db } from './fb.js';
 
 const Create = () => {
     const [title, setTitle] = useState('');
@@ -14,6 +15,20 @@ const Create = () => {
 
         setIsPending(true);
 
+        //// add to collections
+        // db.collection("blogs").set({
+        //     author: "test author",
+        //     body: "test blog body",
+        //     title: "test title"
+
+        // }).then(() => {
+        //         setIsPending(false);
+        //         history.push('/');
+        // }).then(console.log("added"));
+
+
+        // }
+        ////====
         fetch('http://localhost:8000/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },

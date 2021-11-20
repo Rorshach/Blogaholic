@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import db from "./fb.js";
 
 const BlogList = ({ blogs, title }) => {
 
