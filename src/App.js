@@ -4,17 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
-import { onSnapshot, collection } from '@firebase/firestore';
-import { useEffect } from 'react';
-import db from "./fb";
+
 
 function App() {
-  useEffect(() => {
-    onSnapshot(collection(db, "blogs"), (snapshot) => {
-        console.log(snapshot.docs.map((doc) => doc.data()));
-    });
-});
- 
   return (
     <Router>
       <div className="App">
