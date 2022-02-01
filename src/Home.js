@@ -12,9 +12,7 @@ const Home = () => {
     useEffect(() => {
         onSnapshot(collection(db, "blogs"), 
         (snapshot) => {
-            setBlogs(snapshot.docs.map((doc) => doc.data()));
-            console.log(blogs);
-
+            setBlogs(snapshot.docs.map((doc) => {return {...doc.data(), id: doc.id}}));
             setIsPending(false);
             setError(null);
         },
