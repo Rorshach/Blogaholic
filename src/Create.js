@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-// import { db } from './fb.js';
+import { collection, addDoc } from '@firebase/firestore';
+import { db } from './fb.js';
 
 const Create = () => {
     const [title, setTitle] = useState('');
@@ -9,34 +10,21 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false);
     const history = useHistory();
 
+    const docRef = collection(db, 'blogs');
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = {title, body, author};
 
         setIsPending(true);
 
-        //// add to collections
-        // db.collection("blogs").set({
-        //     author: "test author",
-        //     body: "test blog body",
-        //     title: "test title"
-
-        // }).then(() => {
-        //         setIsPending(false);
-        //         history.push('/');
-        // }).then(console.log("added"));
-
-
-        // }
-        ////====
-        fetch('http://localhost:8000/blogs', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(blog)
+        addDoc(docRef, {
+            author: author,
+            body: body,
+            title: title
         }).then(() => {
-            setIsPending(false);
-            history.push('/');
-        });
+                setIsPending(false);
+                history.push('/');
+        }).then(console.log("added"));
     }
 
     return ( 
