@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: 'Playfair Display', serif;
   color: #333;
 }
 .navbar {
@@ -15,7 +15,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #1e6f5c;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,7 +26,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #1e6f5c;
 }
 .content {
   max-width: 600px;
@@ -45,7 +45,7 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #1e6f5c;
   margin-bottom: 8px;
 }
 
@@ -56,14 +56,14 @@
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #1e6f5c;
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: #1e6f5c;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -83,7 +83,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #1e6f5c;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -95,7 +95,7 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #1e6f5c;
   color: #fff;
   border: 0;
   padding: 8px;

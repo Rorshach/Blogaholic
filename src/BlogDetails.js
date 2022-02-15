@@ -33,7 +33,7 @@ const BlogDetails = () => {
             .then(() => {
                 history.push('/');
             });
-     }
+    }
 
     return ( 
         <div className="blog-details">

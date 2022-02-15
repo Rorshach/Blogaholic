@@ -24,7 +24,7 @@ const Create = () => {
         }).then(() => {
                 setIsPending(false);
                 history.push('/');
-        }).then(console.log("added"));
+        });
     }
 
     return ( 
